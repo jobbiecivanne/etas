@@ -1,0 +1,288 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2487.7">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; -webkit-text-stroke: #000000}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; -webkit-text-stroke: #000000; min-height: 14.0px}
+    span.s1 {font-kerning: none}
+    span.Apple-tab-span {white-space:pre}
+  </style>
+</head>
+<body>
+<p class="p1"><span class="s1">&lt;!DOCTYPE html&gt;</span></p>
+<p class="p1"><span class="s1">&lt;html lang="en"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;head&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;meta charset="UTF-8"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;title&gt;My Python Game&lt;/title&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;!-- Include Brython --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;script type="text/javascript" src="https://cdn.jsdelivr.net/npm/brython@3.10.5/brython.min.js"&gt;&lt;/script&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/head&gt;</span></p>
+<p class="p1"><span class="s1">&lt;body onload="brython()"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;h1&gt;My Python Game&lt;/h1&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;!-- This is where we will display the game output --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div id="game"&gt;&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;!-- Your Python code will go below --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;script type="text/python"&gt;</span></p>
+<p class="p1"><span class="s1">girl = r'''</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">       </span>:|</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">       </span>:| <span class="Apple-converted-space">          </span>. ,</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">       </span>:| <span class="Apple-converted-space">          </span>_)/'/</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">       </span>:| <span class="Apple-converted-space">        </span>,/'/,'&lt;,</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">       </span>:| <span class="Apple-converted-space">      </span>.-'\\_.-`</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">       </span>:|<span class="Apple-converted-space">      </span>///'\\</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">       </span>.|<span class="Apple-converted-space">      </span>|e^e-?</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>(/\<span class="Apple-converted-space">      </span>`.=,'._<span class="Apple-converted-space">    </span>.</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>`: L <span class="Apple-converted-space">  </span>_.-J <span class="Apple-converted-space">  </span>L '\.' `.</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">       </span>:|/`.'<span class="Apple-converted-space">  </span>/ \ /'_.' <span class="Apple-converted-space">    </span>\</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">       </span>:|\ <span class="Apple-converted-space">  </span>.-\__V__&lt;<span class="Apple-converted-space">    </span>\/<span class="Apple-converted-space">  </span>L</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">       </span>:| `-' <span class="Apple-converted-space">  </span>\<span class="Apple-converted-space">  </span>,<span class="Apple-converted-space">  </span>\ <span class="Apple-converted-space">  </span>/\<span class="Apple-converted-space">  </span>|</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">       </span>:|<span class="Apple-converted-space">        </span>\._.=-\. <span class="Apple-converted-space">    </span>F</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">       </span>:|<span class="Apple-converted-space">        </span>)\_/ <span class="Apple-converted-space">  </span>`-.__J</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">       </span>:| <span class="Apple-converted-space">      </span>/<span class="Apple-converted-space">  </span>|<span class="Apple-converted-space">    </span>|</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">       </span>.|<span class="Apple-converted-space">      </span>/ <span class="Apple-converted-space">  </span>| <span class="Apple-converted-space">  </span>/</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space"> </span>____<span class="Apple-converted-space">  </span>:|___<span class="Apple-converted-space">  </span>( <span class="Apple-converted-space">  </span>&lt;|' | _______________________________________</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">       </span>:|<span class="Apple-converted-space">      </span>\<span class="Apple-converted-space">  </span>'\<span class="Apple-converted-space">  </span>\ <span class="Apple-converted-space">                    </span>~</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">   </span>~ <span class="Apple-converted-space">  </span>:| <span class="Apple-converted-space">      </span>`. | <span class="Apple-converted-space">  </span>|<span class="Apple-converted-space">  </span>~<span class="Apple-converted-space">          </span>___..._<span class="Apple-converted-space">          </span>~</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">       </span>:| <span class="Apple-converted-space">        </span>`J<span class="Apple-converted-space">  </span>/ <span class="Apple-converted-space">  </span>...--..---' <span class="Apple-converted-space">    </span>_ ""------......____</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">       </span>:| <span class="Apple-converted-space">    </span>,<span class="Apple-converted-space">    </span>_)_|&gt;.__,_<span class="Apple-converted-space">            </span>c")_</span></p>
+<p class="p1"><span class="s1">-.b'ger '-.,-.+- cC\\_\<span class="Apple-converted-space">  </span>"'-=-i"-. <span class="Apple-converted-space">      </span>(__/</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>VK/a:f <span class="Apple-converted-space">        </span>_,. -</span></p>
+<p class="p1"><span class="s1">'''</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">temple = r'''<span class="Apple-converted-space">  </span>V<span class="Apple-converted-space">        </span>V <span class="Apple-converted-space">   <span class="Apple-tab-span">	</span></span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                          </span>+........+</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                          </span>J||||||||L</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>/<span class="Apple-converted-space">            </span>\</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                       </span>~/~~~~~~~~~~~~\~</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                       </span>/<span class="Apple-converted-space">              </span>\</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>~~/~~~~~~~~~~~~~~~~\~~</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>_--^I^--_<span class="Apple-converted-space">    </span>/<span class="Apple-converted-space">                  </span>\</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">       </span>/ /^~|~^\ \~~~~~~+~+~~~~~~~~+~+~~~~~</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>/ / <span class="Apple-converted-space">  </span>| <span class="Apple-converted-space">  </span>\ \ <span class="Apple-converted-space">    </span>| |<span class="Apple-converted-space">        </span>| |</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>| | <span class="Apple-converted-space">  </span>| <span class="Apple-converted-space">  </span>| | <span class="Apple-converted-space">    </span>= =<span class="Apple-converted-space">        </span>= =</span></p>
+<p class="p1"><span class="s1">~~~~~~~ | <span class="Apple-converted-space">  </span>|o<span class="Apple-converted-space">  </span>| ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</span></p>
+<p class="p1"><span class="s1">------- | <span class="Apple-converted-space">  </span>| <span class="Apple-converted-space">  </span>| ---------------------------------</span></p>
+<p class="p1"><span class="s1">------- | <span class="Apple-converted-space">  </span>| <span class="Apple-converted-space">  </span>| ---------------------------------</span></p>
+<p class="p1"><span class="s1">======= |===|===| ================================ '''</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">island = r''' <span class="Apple-converted-space">                                          </span>____</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                         </span>v<span class="Apple-converted-space">        </span>_(<span class="Apple-converted-space">    </span>)</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>_ ^ _<span class="Apple-converted-space">                          </span>v <span class="Apple-converted-space">        </span>(___(__)</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">       </span>'_\V/ `</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">       </span>' oX`</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>X<span class="Apple-converted-space">                            </span>v</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>X<span class="Apple-converted-space">             </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>X<span class="Apple-converted-space">                                                </span>.</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>X<span class="Apple-converted-space">                                                </span>|\</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>X.a##a.<span class="Apple-converted-space">                                          </span>|_\</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">       </span>.aa########a.&gt;&gt;<span class="Apple-converted-space">                                    </span>__|__</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.a################aa. <span class="Apple-converted-space">                                </span>\ <span class="Apple-converted-space">  </span>/</span></p>
+<p class="p1"><span class="s1">~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~'''</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">hall = r''' <span class="Apple-converted-space">                                          </span>____</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>_________________________________________________________</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space"> </span>/| <span class="Apple-converted-space">    </span>-_- <span class="Apple-converted-space">                                            </span>_-<span class="Apple-converted-space">  </span>|\</span></p>
+<p class="p1"><span class="s1">/ |_-_- _ <span class="Apple-converted-space">                                        </span>-_- _- <span class="Apple-converted-space">  </span>-| \<span class="Apple-converted-space">   </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>|<span class="Apple-converted-space">                            </span>_-<span class="Apple-converted-space">  </span>_--<span class="Apple-converted-space">                      </span>|<span class="Apple-converted-space"> </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>|<span class="Apple-converted-space">                            </span>,<span class="Apple-converted-space">                            </span>|</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>|<span class="Apple-converted-space">      </span>.-'````````'.<span class="Apple-converted-space">        </span>'(`<span class="Apple-converted-space">        </span>.-'```````'-.<span class="Apple-converted-space">      </span>|</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>|<span class="Apple-converted-space">    </span>.` | <span class="Apple-converted-space">          </span>`.<span class="Apple-converted-space">      </span>`)'<span class="Apple-converted-space">      </span>.` | <span class="Apple-converted-space">          </span>`.<span class="Apple-converted-space">    </span>| <span class="Apple-converted-space">         </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>| <span class="Apple-converted-space">  </span>/ <span class="Apple-converted-space">  </span>| <span class="Apple-converted-space">  </span>()<span class="Apple-converted-space">        </span>\<span class="Apple-converted-space">      </span>U<span class="Apple-converted-space">      </span>/ <span class="Apple-converted-space">  </span>|<span class="Apple-converted-space">    </span>() <span class="Apple-converted-space">      </span>\ <span class="Apple-converted-space">  </span>|</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>|<span class="Apple-converted-space">  </span>|<span class="Apple-converted-space">    </span>|<span class="Apple-converted-space">    </span>; <span class="Apple-converted-space">        </span>| o <span class="Apple-converted-space">  </span>T <span class="Apple-converted-space">  </span>o |<span class="Apple-converted-space">    </span>|<span class="Apple-converted-space">    </span>; <span class="Apple-converted-space">        </span>|<span class="Apple-converted-space">  </span>|</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>|<span class="Apple-converted-space">  </span>|<span class="Apple-converted-space">    </span>| <span class="Apple-converted-space">    </span>;<span class="Apple-converted-space">        </span>|<span class="Apple-converted-space">  </span>.<span class="Apple-converted-space">  </span>|<span class="Apple-converted-space">  </span>.<span class="Apple-converted-space">  </span>|<span class="Apple-converted-space">    </span>|<span class="Apple-converted-space">    </span>; <span class="Apple-converted-space">        </span>|<span class="Apple-converted-space">  </span>|</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>|<span class="Apple-converted-space">  </span>|<span class="Apple-converted-space">    </span>| <span class="Apple-converted-space">    </span>;<span class="Apple-converted-space">        </span>| <span class="Apple-converted-space">  </span>. | . <span class="Apple-converted-space">  </span>|<span class="Apple-converted-space">    </span>|<span class="Apple-converted-space">    </span>; <span class="Apple-converted-space">        </span>|<span class="Apple-converted-space">  </span>|</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>|<span class="Apple-converted-space">  </span>|<span class="Apple-converted-space">    </span>| <span class="Apple-converted-space">    </span>;<span class="Apple-converted-space">        </span>|<span class="Apple-converted-space">    </span>.|.<span class="Apple-converted-space">    </span>|<span class="Apple-converted-space">    </span>|<span class="Apple-converted-space">    </span>; <span class="Apple-converted-space">        </span>|<span class="Apple-converted-space">  </span>|</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>|<span class="Apple-converted-space">  </span>|<span class="Apple-converted-space">    </span>|____;_________| <span class="Apple-converted-space">    </span>| <span class="Apple-converted-space">    </span>|<span class="Apple-converted-space">    </span>|____;_________|<span class="Apple-converted-space">  </span>| <span class="Apple-converted-space"> </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>|<span class="Apple-converted-space">  </span>| <span class="Apple-converted-space">  </span>/<span class="Apple-converted-space">  </span>__ ; <span class="Apple-converted-space">  </span>- <span class="Apple-converted-space">    </span>| <span class="Apple-converted-space">    </span>! <span class="Apple-converted-space">    </span>| <span class="Apple-converted-space">  </span>/ <span class="Apple-converted-space">    </span>`'() _ -<span class="Apple-converted-space">  </span>|<span class="Apple-converted-space">  </span>|</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>|<span class="Apple-converted-space">  </span>|<span class="Apple-converted-space">  </span>/ __<span class="Apple-converted-space">  </span>()<span class="Apple-converted-space">        </span>-|<span class="Apple-converted-space">        </span>-<span class="Apple-converted-space">  </span>|<span class="Apple-converted-space">  </span>/<span class="Apple-converted-space">  </span>__--<span class="Apple-converted-space">      </span>- <span class="Apple-converted-space">  </span>|<span class="Apple-converted-space">  </span>|</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>|<span class="Apple-converted-space">  </span>| /<span class="Apple-converted-space">        </span>__-- _ <span class="Apple-converted-space">  </span>| <span class="Apple-converted-space">  </span>_- _ -<span class="Apple-converted-space">  </span>| /<span class="Apple-converted-space">        </span>__--_<span class="Apple-converted-space">    </span>|<span class="Apple-converted-space">  </span>|</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>|__|/__________________|___________|/__________________|__|</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space"> </span>/ <span class="Apple-converted-space">                                            </span>_ -<span class="Apple-converted-space">        </span>lc \</span></p>
+<p class="p1"><span class="s1">/ <span class="Apple-converted-space">  </span>-_- _ - <span class="Apple-converted-space">            </span>_- _--- <span class="Apple-converted-space">                      </span>-_-<span class="Apple-converted-space">  </span>-_ \</span></p>
+<p class="p1"><span class="s1">~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~'''</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">gameover = r''' <span class="Apple-converted-space">                                          </span>____</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>******GAME OVER******</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                 </span>__</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">               </span>/`__`\</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">           </span>.=.| ('') |.=.</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>/.-.\ _)(_ /.-.\</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">         </span>|:<span class="Apple-converted-space">    </span>/ ~~ \<span class="Apple-converted-space">    </span>:|</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">         </span>\ :<span class="Apple-converted-space">  </span>| (__) |<span class="Apple-converted-space">  </span>: /</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>| :<span class="Apple-converted-space">  </span>\_/\_/<span class="Apple-converted-space">  </span>: |</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>|:<span class="Apple-converted-space">  </span>/|<span class="Apple-converted-space">    </span>|\<span class="Apple-converted-space">  </span>:|</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>\_/` |<span class="Apple-converted-space">    </span>| `\_/</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">               </span>|<span class="Apple-converted-space">    </span>|</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">               </span>|<span class="Apple-converted-space">    </span>|</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>jgs<span class="Apple-converted-space">  </span>|~~~~|</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">               </span>'----'''</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">fish = r''' <span class="Apple-converted-space">                                          </span>____</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>,---,</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>_<span class="Apple-converted-space">    </span>_,-'<span class="Apple-converted-space">    </span>`--,</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space"> </span>( `-,'<span class="Apple-converted-space">            </span>`\</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>\ <span class="Apple-converted-space">          </span>,<span class="Apple-converted-space">    </span>o \</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>/ <span class="Apple-converted-space">  </span>, <span class="Apple-converted-space">      </span>; <span class="Apple-converted-space">      </span>\</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space"> </span>(_,-' \ <span class="Apple-converted-space">      </span>`, _<span class="Apple-converted-space">  </span>""/</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">     </span>pb `-,___ =='__,-'''</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">booty = r''' <span class="Apple-converted-space">                                          </span>____</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>,</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>/ <span class="Apple-converted-space">    </span>\</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">         </span>( <span class="Apple-converted-space">  </span>Y <span class="Apple-converted-space">  </span>)</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>\<span class="Apple-converted-space">  </span>|<span class="Apple-converted-space">  </span>/'''</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">boat = r''' <span class="Apple-converted-space">   </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">     </span>__/\__</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>~~~\____/~~~~~~</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>~<span class="Apple-converted-space">  </span>~~~ <span class="Apple-converted-space">  </span>~.<span class="Apple-converted-space">   </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'''</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">sleep = r''' <span class="Apple-converted-space">   </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">     </span>_ <span class="Apple-converted-space">  </span>z</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                              </span>Z</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>.--.<span class="Apple-converted-space">  </span>Z Z</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                   </span>/ _(c\ <span class="Apple-converted-space">  </span>.-. <span class="Apple-converted-space">    </span>__</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                  </span>| / /<span class="Apple-converted-space">  </span>'-; <span class="Apple-converted-space">  </span>\'-'`<span class="Apple-converted-space">  </span>`\______</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                  </span>\_\/'/ __/ )<span class="Apple-converted-space">  </span>/<span class="Apple-converted-space">  </span>) <span class="Apple-converted-space">  </span>|<span class="Apple-converted-space">      </span>\--,</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                  </span>| \`""`__-/ .'--/ <span class="Apple-converted-space">  </span>/--------\<span class="Apple-converted-space">  </span>\</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                   </span>\\`<span class="Apple-converted-space">  </span>///-\/ <span class="Apple-converted-space">  </span>/ <span class="Apple-converted-space">  </span>/---;-.<span class="Apple-converted-space">    </span>'-'</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">             </span>jgs<span class="Apple-converted-space">                </span>(________\<span class="Apple-converted-space">  </span>\</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                          </span>'-'<span class="Apple-converted-space"> </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'''</span></p>
+<p class="p1"><span class="s1">snu_snu = r''' <span class="Apple-converted-space">   </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">     </span>,<span class="Apple-converted-space">        </span>,</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">           </span>\y ,--.y/</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">           </span>/,---. )\</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>/ (((\\)\ \</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>\ \\-_/ / /</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">           </span>\ i <span class="Apple-converted-space">  </span>i /</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>(_)=(_)</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">             </span>) . (</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>/\---/\</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">           </span>/<span class="Apple-converted-space">  </span>)-(<span class="Apple-converted-space">  </span>\</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>/<span class="Apple-converted-space">  </span>/ <span class="Apple-converted-space">  </span>\<span class="Apple-converted-space">  </span>\</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">         </span>/ ," <span class="Apple-converted-space">    </span>". \</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>/ / <span class="Apple-converted-space">        </span>\ \</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>hjw<span class="Apple-converted-space">  </span>/-) <span class="Apple-converted-space">          </span>(-\</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>/ ^! <span class="Apple-converted-space">          </span>!^ \</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'''</span></p>
+<p class="p1"><span class="s1">rope = r''' <span class="Apple-converted-space">   </span></span></p>
+<p class="p1"><span class="s1">,<span class="Apple-converted-space">        </span>,</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">   </span>\\//</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>//</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">   </span>//\\<span class="Apple-converted-space"> </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">   </span>\\//</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>//</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">   </span>//\\</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">   </span>\\//</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>//</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">   </span>//\\</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">   </span>\\//</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>//</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">   </span>//\\<span class="Apple-converted-space"> </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">   </span>\\//</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>//</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">   </span>//\\</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">   </span>\\//</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>//</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">   </span>//\\</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'''</span></p>
+<p class="p1"><span class="s1">signature = r''' <span class="Apple-converted-space">   </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.-. <span class="Apple-converted-space"> </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>(<span class="Apple-converted-space">  </span>|.-.</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">   </span>.-\/__ )<span class="Apple-converted-space">     </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>(__/ \</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">     </span>\_/</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space"> </span></span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">     </span>.-.<span class="Apple-converted-space">            </span>.-.</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>(<span class="Apple-converted-space">  </span>|.-.<span class="Apple-converted-space">      </span>.-.|<span class="Apple-converted-space">  </span>)<span class="Apple-converted-space"> </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">   </span>.-'/__ ) <span class="Apple-converted-space">    </span>( __\ '-.</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>(__/ \ <span class="Apple-converted-space">          </span>/ \___)</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">     </span>\_/ <span class="Apple-converted-space">          </span>\_/</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'''</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">axe = r''' <span class="Apple-converted-space">   </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>T<span class="Apple-converted-space">  </span>&lt;|&gt;<span class="Apple-converted-space">  </span>(|||) <span class="Apple-converted-space">  </span>. .<span class="Apple-converted-space">    </span>_ <span class="Apple-converted-space">  </span>_ <span class="Apple-converted-space">    </span>. <span class="Apple-converted-space">  </span>.</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>| <span class="Apple-converted-space">    </span>|<span class="Apple-converted-space">    </span>( | )<span class="Apple-converted-space">  </span>/ \|/ \<span class="Apple-converted-space">  </span>.` \_/ `.<span class="Apple-converted-space">    </span>__</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>| <span class="Apple-converted-space">    </span>`|` <span class="Apple-converted-space">  </span>\_/|\_/<span class="Apple-converted-space">  </span>. <span class="Apple-converted-space">  </span># <span class="Apple-converted-space">  </span>.<span class="Apple-converted-space">  </span>.`<span class="Apple-converted-space">  </span>`//``.</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                 </span>| <span class="Apple-converted-space">      </span>|<span class="Apple-converted-space">      </span>`./#\.` <span class="Apple-converted-space">  </span>. <span class="Apple-converted-space">  </span>// <span class="Apple-converted-space">  </span>.</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                 </span>| <span class="Apple-converted-space">      </span>| <span class="Apple-converted-space">        </span># <span class="Apple-converted-space">      </span>``//\_.`</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                         </span>| <span class="Apple-converted-space">        </span>#<span class="Apple-converted-space">        </span>//</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                   </span># <span class="Apple-converted-space">      </span>//</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                   </span>#<span class="Apple-converted-space">      </span>//</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>'''</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">#**********************</span></p>
+<p class="p1"><span class="s1">print(f"*********\nWelcome to Treasure Island.\nCan you escape the and find the treasure\n"</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>f"or will you get caught and forced to Snu-Snu?\n"</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>f"{ girl }")</span></p>
+<p class="p1"><span class="s1">print(f"******\n Your boat docks onto the island. After crawling through snakes and tall plants\n " + island)</span></p>
+<p class="p1"><span class="s1">print("You come across an ancient structure and decide to go in\n" + temple)</span></p>
+<p class="p1"><span class="s1">print("To your left there is darkness, but to your right you see a glimmer of light\n")</span></p>
+<p class="p1"><span class="s1">print(hall)</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">direction = (input("Which direction do you want to go? L or R\n")).strip().upper()</span></p>
+<p class="p1"><span class="s1">if direction == "L":</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>print("Your bravery saved you and you were able to venture further into the temple")</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>print("As you venture further into the temple you hear running water. Good because you are thristy.\n"</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>"You take a drink from the water and everything is fine. As you come up for air you hear\n"</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>"Footsteps behind you! The natives! You need to make a decision soon.\n"</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>"The water is safe enough to drink so you could swim, or you can hide in the dark behind the rubble.")</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>hide = input("Do you swim in the water or hide in trash? HIDE SWIM \n").strip().upper()</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>if hide == "HIDE":</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>print(f"A tall woman walks into the room. You hold your breath with fear and because this trash STINKS\n"</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>f"{girl}\n"</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>f"She lingers in the room for awhile before ultimately deciding to leave. As she walks away you get\n"</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>f"a glimps of her butt.{booty} it's plump, like the developer's")</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>print(f"{boat} You are snapped out of daydreaming about the dev by a boat drifting towards you.\n "</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>f"checking that the coast is clear, you run out and climb aboard. You fall asleep\n"</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>f"{sleep} \n you are awaken by the thud of you making it back to land. You are in another area\n "</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>f"of the temple.{hall} You reach 3 doors. Blue Black and Gold.\n"</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>f"There is no sound coming from either, but you hear footsteps behind you, the giant woman!\n"</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>f"you have to make a decision soon")</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>door = (input("No time to think! What color door do you pick? BLACK BLUE or GOLD\n")).strip().upper()</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>if door == "BLUE":</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>print(f"You find yourself in a room with a rope coming from a window. Not being able to trust\n"</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                  </span>f"your judgement you hesitate to climb it but the women are getting closer{rope}\n"</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                  </span>f"With no time to lose you climb. As you pull yourself out of the window the rope slips from\n"</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                  </span>f"under you. PHEW! Barely made it. You slip though the jungle back to your ship\n"</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                  </span>f"Congratulations! No treasure but you live to see another adventure\n"</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                  </span>f"{island}\n"</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                  </span>f"Story and code by Jobba Wobba, art found at ascii.co.uk/art {signature}")</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>elif door == "GOLD":</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>print(f"You enter a room finally thinking you are safe. Surrounded by jewels and gold you began to imagine\n"</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                  </span>"your life of riches and status! You flop on the bed exhausted from your journey. As a sense\n "</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                  </span>"of calmness comes over your body BAM! The door swings open. \n "</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                  </span>f"time for snu snu {snu_snu}\n"</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                  </span>f"{gameover}")</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>else:</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>print(f"You run into the room locking it behind you. You lean against the wall to catch your breath\n"</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                  </span>"But unbeknowingstly your shoulder pressed against a button on the wall. \n"</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                  </span>"who the hell designed this place?! Another door opens and you are sick of doors\n"</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                  </span>f"but you walk towards it ready to continue to the treasure when {axe}\n"</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                  </span>f"A giant axe swings towards you. You died\n"</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                  </span>f"{gameover}")</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>else:</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>print(f"{fish}\n A swarm of demon fish attack you. As you scream through the pain the last thing you see\n"</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>f"is a large beautiful woman looking at you{gameover}")</span></p>
+<p class="p1"><span class="s1">elif direction == "R":</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>print("As you ventured towards the light you carelessly fell into a hole.\n Pierced by spikes you have died")</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>print(gameover)</span></p>
+</body>
+</html>
